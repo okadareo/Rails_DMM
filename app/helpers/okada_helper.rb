@@ -1,0 +1,2 @@
+module OkadaHelper
+end

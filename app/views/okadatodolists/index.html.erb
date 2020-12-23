@@ -1,0 +1,26 @@
+<div class="okadalist-wrap">
+<% @okadalists.each do |okadalists| %>
+  <div class="okadalists-box">
+    <%= attachment_image_tag okadalists, :image, :fill, 200, 200, format: 'jpeg' %>
+    <div class="okadalists-comment">
+      <span class="okadalists-body"><%= link_to okadalists.title, "/okadareotodolists/#{okadalists.id}" %></span>
+      <span class="okadalists-title"><%= link_to okadalists.body, okada_path(okadalists.id) %></span>
+    </div>
+  </div>
+<% end %>
+</div>
+
+
+
+<%#<h1>投稿一覧</h1>
+<% @okadalists.each do |okadalists| %>
+<%#  <p>タイトル</p>
+  <span>
+    <%= link_to okadalists.title, "/okadareotodolists/#{okadalists.id}" %>
+<%#  </span>
+  <span>
+    <%= link_to okadalists.body, okada_path(okadalists.id) %>
+<%#  </span>
+  <p>画像</p>
+  <%= attachment_image_tag okadalists, :image, :fill, 100, 200, format: 'jpeg' %>
+<%#<% end %>

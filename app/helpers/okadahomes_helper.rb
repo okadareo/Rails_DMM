@@ -1,0 +1,2 @@
+module OkadahomesHelper
+end

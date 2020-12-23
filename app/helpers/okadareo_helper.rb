@@ -1,0 +1,2 @@
+module OkadareoHelper
+end
